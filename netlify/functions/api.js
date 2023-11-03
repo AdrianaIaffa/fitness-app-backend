@@ -1,11 +1,11 @@
 import "dotenv/config";
-import express, { response } from "express";
+import express, { Router } from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
-import userRouter from './routes/api/users.js'
-import { User } from "./models/user.js";
-import calendarRouter from "./routes/api/calendar.js";
+import userRouter from '../../routes/api/users.js'
+import { User } from ".../../models/user.js";
+import calendarRouter from "../../routes/api/calendar.js";
 
 
 const api = express();
